@@ -27,7 +27,7 @@ public class CtoFService {
 		Double celsius = c;
 		fahrenheit = ((celsius * 9) / 5) + 32;
  
-		String result = "Output: F to C Converter Output is: " + fahrenheit;
+		String result = "Output: C to F Converter Output is: " + fahrenheit;
 		return  result;
 	}
 	
