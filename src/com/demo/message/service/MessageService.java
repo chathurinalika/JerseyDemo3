@@ -18,20 +18,31 @@ public class MessageService {
 	}
 
 	/**
-	 * This method use to add some hard coded messages to a list
+	 * This method use to get all messages
 	 * 
-	 * 
-	 * @return  List of messages
+	 * @return - List of messages
 	 */
 	public List<Message> getMessages(){
 				
 		return new ArrayList<Message>(messagesMap.values());		
 	}
 	
+	/**
+	 * This method use to get message by ID
+	 * 
+	 * @param id - message id 
+	 * @return - message of requested id
+	 */
 	public Message getMessage(long id){
 		return messagesMap.get(id);
 	}
 	
+	/**
+	 * This method use to add new messages
+	 * 
+	 * @param message - new message 
+	 * @return - message including id 
+	 */
 	public Message addMessage(Message message){
 		message.setMsgId(messagesMap.size() + 1);
 		messagesMap.put(message.getMsgId(), message);
@@ -39,15 +50,17 @@ public class MessageService {
 		return message;		
 	}
 	
+	/**
+	 * This method use to update message
+	 * 
+	 * @param message - message that needs to update
+	 * @return updated message including id
+	 */
 	public Message updatemMessage(Message message){
 		if(message.getMsgId() <= 0){
 			return null;
 		}
 		messagesMap.put(message.getMsgId(), message);
 		return message;		
-	}
-	
-	public Message removeMessage(long id){
-		return messagesMap.remove(id);
 	}
 }
