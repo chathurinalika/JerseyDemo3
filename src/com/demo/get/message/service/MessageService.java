@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import com.demo.det.message.database.DatabaseClass;
+import com.demo.get.message.database.DatabaseClass;
 import com.demo.get.message.domain.Message;
 
 public class MessageService {

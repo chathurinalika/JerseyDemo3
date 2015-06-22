@@ -1,4 +1,4 @@
-package com.demo.det.message.database;
+package com.demo.get.message.database;
 
 import java.util.HashMap;
 import java.util.Map;
