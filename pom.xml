@@ -51,5 +51,12 @@
   		<artifactId>jersey-core</artifactId>
   		<version>1.19</version>
   	</dependency>
+  	<!-- This dependency added to test 'consumes a simple JSON'. It's avoid java.lang.NoClassDefFoundError-->
+  	<dependency>
+		<groupId>com.sun.jersey</groupId>
+	    <artifactId>jersey-json</artifactId>
+	    <version>1.9</version>
+	</dependency>
+	
   </dependencies>
 </project>

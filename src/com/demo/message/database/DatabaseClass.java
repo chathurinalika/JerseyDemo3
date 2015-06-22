@@ -1,10 +1,10 @@
-package com.demo.get.message.database;
+package com.demo.message.database;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.demo.get.message.domain.Message;
-import com.demo.get.message.domain.Profile;
+import com.demo.message.domain.Message;
+import com.demo.message.domain.Profile;
 
 public class DatabaseClass {
 

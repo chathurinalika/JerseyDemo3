@@ -1,4 +1,4 @@
-package com.demo.get.message.domain;
+package com.demo.message.domain;
 
 import java.util.Date;
 

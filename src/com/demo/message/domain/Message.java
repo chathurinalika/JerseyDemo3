@@ -1,6 +1,4 @@
-package com.demo.get.message.domain;
-
-import java.util.Date;
+package com.demo.message.domain;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -9,7 +7,6 @@ public class Message {
 
 	private long msgId;
 	private String message;
-	private Date date;
 	
 	public Message(){
 		
@@ -19,7 +16,6 @@ public class Message {
 		super();
 		this.msgId = msgId;
 		this.message = message;
-		this.date = new Date();
 	}
 	
 	public long getMsgId() {
@@ -33,12 +29,5 @@ public class Message {
 	}
 	public void setMessage(String message) {
 		this.message = message;
-	}
-	public Date getDate() {
-		return date;
-	}
-	public void setDate(Date date) {
-		this.date = date;
-	}
-		
+	}	
 }

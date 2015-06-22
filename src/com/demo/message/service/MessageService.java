@@ -1,11 +1,11 @@
-package com.demo.get.message.service;
+package com.demo.message.service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import com.demo.get.message.database.DatabaseClass;
-import com.demo.get.message.domain.Message;
+import com.demo.message.database.DatabaseClass;
+import com.demo.message.domain.Message;
 
 public class MessageService {
 	
@@ -23,7 +23,7 @@ public class MessageService {
 	 * 
 	 * @return  List of messages
 	 */
-	public List<Message> getMessage(){
+	public List<Message> getMessages(){
 				
 		return new ArrayList<Message>(messagesMap.values());		
 	}
